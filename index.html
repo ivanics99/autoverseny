@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="auto.js"></script>
+    <title>AutóVerseny</title>
+</head>
+<body ng-app="myApp">
+    <div ng-controller="myCtrl">
+        <p>3.feladat: {{hossz}}</p>
+        <p>4.feladat: {{masodperc}} másodperc</p>
+    </div>
+    <div ng-controller="myControl">
+        <p>5.feladat: <input type="text" id="nev" />
+            <button type="button" ng-click="leker()">Lekér</button>
+        </p>
+        <p>6.feladat: {{kiir}}</p>
+    </div>
+</body>
+</html>
